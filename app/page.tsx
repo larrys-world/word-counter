@@ -1,4 +1,5 @@
 import WordCounter from '@/components/WordCounter'
+import AdSense from '@/components/AdSense'
 
 export default function Home() {
   return (
@@ -18,7 +19,17 @@ export default function Home() {
           </div>
         </header>
 
+        {/* Top Ad */}
+        <div className="mb-6">
+          <AdSense slot="top-banner" format="horizontal" className="mx-auto" />
+        </div>
+
         <WordCounter />
+
+        {/* Middle Ad */}
+        <div className="my-8">
+          <AdSense slot="mid-content" format="rectangle" className="mx-auto" />
+        </div>
 
         <section className="mt-16 prose prose-gray max-w-none">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
@@ -92,6 +103,11 @@ export default function Home() {
                 <li>• Write comprehensive content (1,500+ words for competitive topics)</li>
               </ul>
             </div>
+          </div>
+
+          {/* Bottom Ad */}
+          <div className="my-8">
+            <AdSense slot="bottom-content" format="rectangle" className="mx-auto" />
           </div>
 
           <div className="mt-8 p-6 bg-blue-50 rounded-lg">
