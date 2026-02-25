@@ -18,35 +18,7 @@ export default function Home() {
             </p>
           </div>
         </header>
-        {/* Structured Data */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebApplication",
-              "name": "Word Counter",
-              "description": "Free online word counter, character counter, and text analysis tool. Count words, characters, sentences, paragraphs, and reading time instantly.",
-              "url": "https://larrys-world.github.io/word-counter/",
-              "applicationCategory": "UtilityApplication",
-              "operatingSystem": "Any",
-              "offers": {
-                "@type": "Offer",
-                "price": "0",
-                "priceCurrency": "USD"
-              },
-              "featureList": [
-                "Count words in real-time",
-                "Count characters with and without spaces",
-                "Count sentences and paragraphs",
-                "Estimate reading time",
-                "Analyze text density",
-                "No registration required"
-              ],
-              "screenshot": "https://larrys-world.github.io/word-counter/og-image.png"
-            })
-          }}
-        />
+
         {/* Top Ad */}
         <div className="mb-6">
           <AdSense slot="top-banner" format="horizontal" className="mx-auto" />
