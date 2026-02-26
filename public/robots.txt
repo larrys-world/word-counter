@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://larrys-world.github.io/word-counter/sitemap.xml

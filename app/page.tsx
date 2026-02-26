@@ -1,6 +1,7 @@
 import WordCounter from '@/components/WordCounter'
 import AdSense from '@/components/AdSense'
 
+import RelatedTools from './RelatedTools'
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-indigo-50 to-white">
@@ -53,6 +54,11 @@ export default function Home() {
         </div>
 
         <WordCounter />
+
+        {/* Related Tools */}
+        <div className="my-8">
+          <RelatedTools currentTool="word-counter" />
+        </div>
 
         {/* Middle Ad */}
         <div className="my-8">
